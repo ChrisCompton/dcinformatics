@@ -1,10 +1,28 @@
-site_name: Notebook
+site_name: DC's Informatics Notebook
 # docs_dir: ../your_docs_dir
-repo_url: https://github.com/ChrisCompton/notebook
+repo_url: https://github.com/ChrisCompton/dcinformatics
+repo_name: ChrisCompton/dcinformatics
+edit_uri: blob/main/docs/
+
+
 theme:
   name: material
+  
   palette:
     primary: green
+
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - toc.follow
+
 
 plugins:
   - search
@@ -16,15 +34,6 @@ hljs_languages:
   - python
   - sql
 
-features:
-    - content.code.annotate
-    - content.code.copy
-    - content.tabs.link
-    - content.tooltips
-    - navigation.tabs
-    - navigation.top
-    - search.highlight
-    - toc.follow
 
 
 extra_css:
