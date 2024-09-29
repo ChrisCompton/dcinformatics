@@ -2,7 +2,7 @@ name: Deploy Demo Notebook
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main","published"]
   workflow_dispatch:
 
 permissions:
@@ -42,6 +42,7 @@ jobs:
         path: |
           site
   deploy:
+    if: github.ref == 'refs/heads/published'
     needs: build
     runs-on: ubuntu-latest
     environment:
